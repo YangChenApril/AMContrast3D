@@ -1,0 +1,5 @@
+# ninja log v5
+0	33204	1678782172094708189	/home/ychenn/disk/PointNeXt/openpoints/cpp/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer_cuda.o	18af9346f3e1978d
+0	121945	1678782260851646609	/home/ychenn/disk/PointNeXt/openpoints/cpp/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer.o	35357ced90f282a9
+1	12474	1678885399657375208	/home/ychenn/disk/PointNeXt/openpoints/cpp/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer_cuda.o	5aeb0d130a4b32b2
+2	23283	1678885410469661783	/home/ychenn/disk/PointNeXt/openpoints/cpp/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer.o	eb45bc010c5b6ec

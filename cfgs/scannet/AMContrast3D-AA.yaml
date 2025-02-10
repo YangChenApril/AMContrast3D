@@ -1,0 +1,67 @@
+# -------------------
+#    AMContrast3D   |
+#     (ScanNet)     |
+# -------------------
+
+ambiguity_args:
+  action: False      # Aimbiguity V.S. mIoU & OA & mACC & count (@ TEST)
+  vis: False         # Aimbiguity Visualization (@ TEST)
+  nsample: 24        # Neighboring Size (@ AEF)
+  ccbeta: 0.04       # Beta (@ AEF)  {0.04, 0.01}                   
+  cctype: Method2  
+  # Method1: Constant Distance   (cc=n/5)
+  # Method2: Squared Euclid Dis. (cc=n/(d^2))
+  # Method3: Rooted Euclid Dis.  (cc=n/d))
+  temperature: 0.5  
+  supervisedCL: Method1
+  # Method1: sum(eij)/[sum(eij)+sum(eik)]
+  # Method2: sum[eij/eij+sum(eik)]
+  db: -m
+  # -m: (positive-m) & (negative) ==> [+]-[-]>=m
+  # +m: (positive) & (negative+m) ==> [+]-[-]>=m
+  # NONE: (positive) & (negative)   ==> [+]-[-]>=0
+  margin: adaptive     # mi: {constant, adaptive, learned}
+  mu: -1               # u: mi=u*ai+v (@ Margin Generator)
+  nu: 0.6              # v: mi=u*ai+v (@ Margin Generator)
+  miou_B_I: False      # Boundary & Inner (@ TEST)
+  w1: 0.1              # Weight (@ Cross-Entropy Objective)
+  w2: 0.9              # Weight (@ Adaptive Margin Contrastive Objective)
+  stages: up           # Encoder & Decoder: {'down', 'up'}
+  stages_num: 4        # Satge Number [('up', 0), ('up', 1), ('up', 2), ('up', 3)]: {1, 2, 3, 4}
+
+model:
+  NAME: BaseSeg_AMContrast3D              # BaseSeg: PointNeXt
+  encoder_args:
+    NAME: PointNextEncoder_AMContrast3D   # PointNextEncoder
+    blocks: [1, 4, 7, 4, 4]
+    strides: [1, 4, 4, 4, 4]
+    sa_layers: 1
+    sa_use_res: False 
+    width: 64 # can be even larger.
+    in_channels: 7  # no heights, 1 miou worse
+    expansion: 4
+    radius: 0.05  # better than other radius
+    nsample: 32 
+    aggr_args:
+      feature_type: 'dp_fj'
+      reduction: 'max'
+    group_args:
+      NAME: 'ballquery'
+      normalize_dp: True
+    conv_args:
+      order: conv-norm-act
+    act_args:
+      act: 'relu'
+    norm_args:
+      norm: 'bn'
+  decoder_args:
+    NAME: PointNextDecoder_AMContrast3D  # PointNextDecoder
+  cls_args:
+    NAME: SegHead
+    global_feat: max  # append global feature to each point feature
+    num_classes: 20
+    in_channels: null
+    norm_args:
+      norm: 'bn'
+
+batch_size: 2

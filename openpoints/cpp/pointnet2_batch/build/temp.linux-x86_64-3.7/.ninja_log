@@ -1,0 +1,19 @@
+# ninja log v5
+3	10246	1678782067561549655	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/interpolate.o	d3604efcf65edbf9
+3	10470	1678782067777552116	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/group_points.o	e1ef873cf0b62c91
+1	10596	1678782067901553530	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/ball_query.o	8e1a7da1c6e472d
+3	10841	1678782068153556398	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/sampling.o	d63601f3062aace8
+0	34672	1678782091969825917	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/pointnet2_api.o	4228ada90bd2bc95
+2	35674	1678782092981837291	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/group_points_gpu.o	8729b53586931c8
+3	36555	1678782093869847266	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/interpolate_gpu.o	cafad3d95c8f8698
+4	36616	1678782093929847942	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/sampling_gpu.o	d64b97f2d07ec6f6
+0	36927	1678782094229851309	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/ball_query_gpu.o	67d9e6e622176c0
+2	4326	1678885357480206185	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/group_points.o	709ab8defb85e4bf
+2	4413	1678885357568208714	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/sampling.o	28ccc68c8915e645
+1	4437	1678885357592209400	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/ball_query.o	77dbd5f988e2d97d
+2	4480	1678885357636210665	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/interpolate.o	ce412b90b2fedd18
+1	11794	1678885364948419296	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/ball_query_gpu.o	bb7cbb44f70e1943
+2	11837	1678885364992420544	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/interpolate_gpu.o	ddffd0d2bbd0f471
+1	11882	1678885365036421790	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/group_points_gpu.o	483109c19bc586b8
+2	12251	1678885365404432215	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/sampling_gpu.o	7ad0de0da6d65180
+1	14102	1678885367248484385	/home/ychenn/disk/PointNeXt/openpoints/cpp/pointnet2_batch/build/temp.linux-x86_64-3.7/src/pointnet2_api.o	144ef5f0ec67d44f

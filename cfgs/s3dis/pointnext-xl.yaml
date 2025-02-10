@@ -1,0 +1,54 @@
+# -----------------
+#     PointNeXt   |
+#      (S3DIS)    |
+# -----------------
+
+ambiguity_args:
+  action: False      # Aimbiguity V.S. mIoU & OA & mACC & count (@ TEST)
+  vis: False         # Aimbiguity Visualization (@ TEST)
+  nsample: 24        # Neighboring Size (@ AEF)                  
+  cctype: Method2  
+  # Method1: Constant Distance   (cc=n/5)
+  # Method2: Squared Euclid Dis. (cc=n/(d^2))
+  # Method3: Rooted Euclid Dis.  (cc=n/d)
+
+boundary:
+  add_miou: boundary.inner
+
+model:
+  NAME: BaseSeg
+  encoder_args:
+    # NAME: PointNextCBLEncoder
+    NAME: PointNextEncoder
+    blocks: [1, 4, 7, 4, 4] 
+    strides: [1, 4, 4, 4, 4]
+    sa_layers: 1
+    sa_use_res: False 
+    width: 64 
+    in_channels: 4
+    expansion: 4
+    radius: 0.1
+    nsample: 32 
+    aggr_args:
+      feature_type: 'dp_fj'
+      reduction: 'max'
+    group_args:
+      NAME: 'ballquery'
+      normalize_dp: True
+    conv_args:
+      order: conv-norm-act
+    act_args:
+      act: 'relu'
+    norm_args:
+      norm: 'bn'
+  decoder_args:
+    # NAME: PointNextCBLDecoder
+    NAME: PointNextDecoder
+  cls_args:
+    NAME: SegHead
+    num_classes: 13
+    in_channels: null
+    norm_args:
+      norm: 'bn'
+
+batch_size: 5
