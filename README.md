@@ -9,7 +9,7 @@ This repo is the official project repository of the papers: "[AMContrast3D](http
 
 ## Highlights
 
-- **[16/April/2025]** Our paper AMContrast3D++ is accepted to **IEEE TMM**. 🌼
+- **[16/April/2025]** Our paper AMContrast3D++ is accepted to **IEEE TMM**. ⭐
 - **[13/March/2024]** Our paper AMContrast3D is accepted to **ICME 2024 [Oral]**. 😊
 
 ## Overview
@@ -44,7 +44,7 @@ gdown https://drive.google.com/uc?id=1MX3ZCnwqyRztG1vFRiHkKTz68ZJeHS4Y
 tar -xvf s3disfull.tar
 ```
 
-Download `ScanNet` dataset for semantic segmentation task by running the following commands:
+Download `ScanNet` dataset for the semantic segmentation task by running the following commands:
 
 ```shell script
 cd data
@@ -96,12 +96,12 @@ Performance of indoor semantic segmentation:
 
 ## Acknowledgment
 
-This project is based on PointNeXt ([paper](https://arxiv.org/abs/2206.04670), [code](https://github.com/guochengqian/PointNeXt)) and CBL ([paper](https://arxiv.org/abs/2203.05272), [code](https://github.com/LiyaoTang/contrastBoundary)). Thanks for their wonderful works.
+This project is based on PointNeXt ([paper](https://arxiv.org/abs/2206.04670), [code](https://github.com/guochengqian/PointNeXt)) and CBL ([paper](https://arxiv.org/abs/2203.05272), [code](https://github.com/LiyaoTang/contrastBoundary)). Thanks for their wonderful work.
 
 
 ## Citation
 
-If you find this repository useful in your research, please consider giving a citation. ⭐
+If you find this repository useful in your research, please consider giving a citation. 🌷
 ```bibtex
 @inproceedings{chen2024adaptive,
   title={Adaptive Margin Contrastive Learning for Ambiguity-aware 3D Semantic Segmentation},
