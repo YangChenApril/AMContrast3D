@@ -9,7 +9,7 @@ This repo is the official project repository of the papers: "[AMContrast3D](http
 
 ## Highlights
 
-- **[16/April/2025]** Our paper AMContrast3D++ is accepted to **IEEE TMM**. 
+- **[16/April/2025]** Our paper AMContrast3D++ is accepted to **IEEE TMM**. 🌼
 - **[13/March/2024]** Our paper AMContrast3D is accepted to **ICME 2024 [Oral]**. 😊
 
 ## Overview
@@ -24,10 +24,9 @@ Most existing methods use equally penalized objectives, which ignore the per-poi
 
 ## Installation
 
-This code has been tested on Ubuntu 20.04 and two NVIDIA RTX 3090. Please follow the requirements of [OpenPoints](https://github.com/guochengqian/PointNeXt/blob/master/docs/index.md) library to prepare the `openpoints` environment: 
+This code has been tested on Ubuntu 20.04 and two NVIDIA RTX 3090 GPUs. Please follow the requirements of [OpenPoints](https://github.com/guochengqian/PointNeXt/blob/master/docs/index.md) library to prepare the `openpoints` environment: 
 
 ```shell script
-git clone --recurse-submodules git@github.com:YangChenApril/AMContrast3D.git
 conda activate openpoints
 cd AMContrast3D
 ```
