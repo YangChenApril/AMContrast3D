@@ -2,7 +2,7 @@
 <h1>Adaptive Margin Contrastive Learning<br>
 for Ambiguity-aware 3D Semantic Segmentation</h1>
 
-This repo is the official project repository of the papers: "[AMContrast3D](https://ieeexplore.ieee.org/document/10688017)" and "[AMContrast3D++](https://ieeexplore.ieee.org/document/10688017)".
+This repo is the official project repository of the papers: "[AMContrast3D](https://ieeexplore.ieee.org/document/10688017)" and "[AMContrast3D++]".
 
 
 </div>
@@ -114,13 +114,3 @@ If you find this repository useful in your research, please consider giving a ci
 }
 ```
 
-```bibtex
-@inproceedings{?,
-  title={Ambiguity-aware Point Cloud Segmentation by Adaptive Margin Contrastive Learning},
-  author={?},
-  booktitle={TMM},
-  pages={?},
-  year={?},
-  organization={?}
-}
-```
