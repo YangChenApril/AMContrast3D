@@ -2,7 +2,7 @@
 <h1>Adaptive Margin Contrastive Learning<br>
 for Ambiguity-aware 3D Semantic Segmentation</h1>
 
-This repo is the official project repository of the papers: "[AMContrast3D](https://ieeexplore.ieee.org/document/10688017)" and "[AMContrast3D++]".
+This repo is the official project repository of the papers: "[AMContrast3D](https://ieeexplore.ieee.org/document/10688017)" and "AMContrast3D++".
 
 
 </div>
