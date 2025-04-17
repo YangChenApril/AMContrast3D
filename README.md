@@ -9,9 +9,8 @@ This repo is the official project repository of the papers: "[AMContrast3D](http
 
 ## Highlights
 
-- **[20/Feb/2025]** Release the code and update our paper in arXiv.
-- **[18/Feb/2025]** Our paper AMContrast3D++ is accepted by **IEEE TMM**.
-- **[13/Mar/2024]** Our paper AMContrast3D is accepted by **ICME 2024 [Oral]**. 😊
+- **[16/April/2025]** Our paper AMContrast3D++ is accepted to **IEEE TMM**.
+- **[13/Mar/2024]** Our paper AMContrast3D is accepted to **ICME 2024 [Oral]**. 😊
 
 ## Overview
 
