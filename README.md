@@ -96,7 +96,7 @@ Performance of indoor semantic segmentation:
 
 ## Acknowledgment
 
-This project is based on PointNeXt ([paper](https://arxiv.org/abs/2206.04670), [code](https://github.com/guochengqian/PointNeXt)) and CBL ([paper](https://arxiv.org/abs/2203.05272), [code](https://github.com/LiyaoTang/contrastBoundary)). Thanks for their wonderful work.
+This code is based on PointNeXt ([paper](https://arxiv.org/abs/2206.04670), [code](https://github.com/guochengqian/PointNeXt)) and CBL ([paper](https://arxiv.org/abs/2203.05272), [code](https://github.com/LiyaoTang/contrastBoundary)). Thanks for their wonderful work.
 
 
 ## Citation
